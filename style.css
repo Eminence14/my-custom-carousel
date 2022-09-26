@@ -15,7 +15,8 @@ header {
   margin: 0 0 1em;
 }
 .container {
-  width: 70%;
+  width: 500px;
+  max-width: 70%;
   margin: 0 auto;
   overflow: hidden;
 }

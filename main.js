@@ -17,10 +17,10 @@ function nextImg() {
             images.children[token].style.gridColumn = '1';
         }
     }
-    if (token === 3) {
+    if (token === numImg - 1) {
         token = -1
     }
-    console.log(token)
+    // console.log(token)
 }
 
 function prevImg() {
@@ -28,7 +28,7 @@ function prevImg() {
         token = numImg
     }
     token--;
-    console.log(token)
+    // console.log(token)
     for (let i = 0; i < numImg; i++) {
         if (i !== token) {
             images.children[i].style.gridColumn = '2';
@@ -38,6 +38,3 @@ function prevImg() {
         }
     }
 }
-
-// console.log(images.children[0])
-// images.children[token].style.gridColumn ='1'
